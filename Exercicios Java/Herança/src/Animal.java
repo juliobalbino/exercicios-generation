@@ -1,14 +1,16 @@
 public class Animal {
 
     private String nome;
-    private int Idade;
+    private int idade;
+    private String som;
 
     public Animal() {
     }
 
-    public Animal(String nome, int idade) {
+    public Animal(String nome, int idade, String som) {
         this.nome = nome;
-        Idade = idade;
+        this.idade = idade;
+        this.som = som;
     }
 
     public String getNome() {
@@ -20,11 +22,19 @@ public class Animal {
     }
 
     public int getIdade() {
-        return Idade;
+        return idade;
     }
 
     public void setIdade(int idade) {
-        Idade = idade;
+        idade = idade;
+    }
+
+    public String getSom() {
+        return som;
+    }
+
+    public void setSom(String som) {
+        this.som = som;
     }
 
     public void emitirSom(){
@@ -33,6 +43,6 @@ public class Animal {
     @Override
     public String toString() {
         return  "nome='" + nome + '\'' +
-                ", Idade=" + Idade;
+                ", Idade=" + idade;
     }
 }

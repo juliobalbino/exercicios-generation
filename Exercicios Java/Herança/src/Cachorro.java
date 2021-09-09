@@ -3,12 +3,12 @@ public class Cachorro extends Animal{
     public Cachorro() {
     }
 
-    public Cachorro(String nome, int idade) {
-        super(nome, idade);
+    public Cachorro(String nome, int idade, String som) {
+        super(nome, idade,som);
     }
 
     public void emitirSom(){
-        System.out.println("Cachorro latiu!");
+        System.out.println("Cachorro "+this.getSom()+"!");
     }
 
     public void correr(){

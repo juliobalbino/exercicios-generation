@@ -3,12 +3,12 @@ public class Cavalo extends Animal{
     public Cavalo() {
     }
 
-    public Cavalo(String nome, int idade) {
-        super(nome, idade);
+    public Cavalo(String nome, int idade, String som) {
+        super(nome, idade,som);
     }
 
-    public void emitirSom(){
-        System.out.println("Cavalo relinchou!");
+    public void emitirSom() {
+        System.out.println("Cavalo " + this.getSom() + "!");
     }
 
     public void correr(){

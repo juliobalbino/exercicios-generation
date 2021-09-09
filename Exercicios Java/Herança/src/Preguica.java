@@ -3,12 +3,12 @@ public class Preguica extends Animal{
     public Preguica() {
     }
 
-    public Preguica(String nome, int idade) {
-        super(nome, idade);
+    public Preguica(String nome, int idade, String som) {
+        super(nome, idade,som);
     }
 
     public void emitirSom(){
-        System.out.println("Preguiça emitiu sons de alta frequencia e balidos!");
+        System.out.println("Preguiça "+this.getSom()+"!");
     }
 
     public void subirEmArvore(){
