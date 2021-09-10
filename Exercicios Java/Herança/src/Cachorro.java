@@ -11,11 +11,12 @@ public class Cachorro extends Animal{
         System.out.println("Cachorro "+this.getSom()+"!");
     }
 
+
     public void correr(){
         System.out.println("Cachorro correu!");
     }
 
-    @Override
+
     public String toString() {
         return "Cachorro:  " + super.toString();
     }

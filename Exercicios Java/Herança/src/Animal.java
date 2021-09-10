@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     private String nome;
     private int idade;
@@ -37,8 +37,9 @@ public class Animal {
         this.som = som;
     }
 
-    public void emitirSom(){
-    }
+    public abstract void emitirSom();
+
+    public abstract void correr();
 
     @Override
     public String toString() {

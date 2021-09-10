@@ -7,8 +7,14 @@ public class Preguica extends Animal{
         super(nome, idade,som);
     }
 
+
     public void emitirSom(){
         System.out.println("Preguiça "+this.getSom()+"!");
+    }
+
+    @Override
+    public void correr() {
+        subirEmArvore();
     }
 
     public void subirEmArvore(){

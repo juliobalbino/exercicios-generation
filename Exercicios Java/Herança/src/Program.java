@@ -1,24 +1,24 @@
 public class Program {
     public static void main(String[] args) {
 
-        Cachorro cachorro = new Cachorro("Dog", 13, "latiu");
+        Animal cachorro = new Cachorro("Dog", 13, "latiu");
 
         cachorro.correr();
         cachorro.emitirSom();
 
         System.out.println(cachorro);
 
-        Cavalo cavalo = new Cavalo("Poney", 22, "relinchou");
+        Animal cavalo = new Cavalo("Poney", 22, "relinchou");
 
         cavalo.correr();
         cavalo.emitirSom();
 
         System.out.println(cavalo);
 
-        Preguica preguica = new Preguica("Jorge", 9, "emitiu sons balidos");
+        Animal preguica = new Preguica("Jorge", 9, "emitiu sons balidos");
 
         preguica.emitirSom();
-        preguica.subirEmArvore();
+        preguica.correr();
 
         System.out.println(preguica);
 
