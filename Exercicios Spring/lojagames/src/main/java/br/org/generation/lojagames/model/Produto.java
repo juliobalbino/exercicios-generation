@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tb_produto")
@@ -28,6 +27,10 @@ public class Produto {
     @ManyToOne
     @JsonIgnoreProperties("produtos")
     private Categoria categoria;
+
+    @ManyToOne
+    @JsonIgnoreProperties("produtos")
+    private Usuario usuario;
 
     public long getId() {
         return id;
@@ -67,5 +70,13 @@ public class Produto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
