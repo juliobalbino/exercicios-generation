@@ -1,0 +1,91 @@
+/*
+Estilos da página index.html
+*/
+
+        #p1{
+            font-family: 'Comic Neue', cursive;
+    
+        }
+
+        .red{
+           color: rgb(255, 20, 0); 
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .justify{
+            text-align: justify;
+        }
+
+        .container{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu li {
+            display:inline;
+            padding: 15px;
+            
+        }
+
+        #menu li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        #menu li a:hover{
+            color: grey;
+        }
+        
+        .p-30{
+            padding: 30px;
+        }
+
+        .p-15{
+            padding: 15px;
+        }
+
+        .br-50{
+            border-radius: 50%;
+        }
+
+        footer{
+            background-color: grey;
+            border-radius: 5px;
+            margin-top: 20px;
+            clear: both;
+            position: static;
+            bottom:0;
+        }
+
+        footer p{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .tm-social{
+            width: 30px;
+            height: 30px;
+        }
+
+
+        .links a{
+            padding-top: -50px;
+            margin-bottom: -40px;
+        }
+/*
+Estilos da página contato.html
+*/
+
+.ml-50{
+    margin-left: 50px;
+}
+
+.footer-end{
+    margin-top: 382px;
+}
